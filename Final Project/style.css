@@ -1,0 +1,98 @@
+#navbar{
+    display: flex;
+    gap: 35px;
+    
+}
+.btn-navbar{
+    cursor: pointer;
+}
+.btn-navbar:hover{
+    color: #1a0750;
+}
+
+
+form{
+    background-color: rgb(252, 220, 178);
+    border-radius: 5px;
+    gap: 10px;
+      width: 300px;
+      padding: 20px;
+      
+}
+form input{
+    background: #bbb;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+
+}
+.btn-daftar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-daftar:hover {
+  background-color: #408a44;
+}
+.btn-kembali {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-kembali:hover {
+  background-color: #641313;
+}
+
+#zoomOverlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f; 
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#zoomOverlay img {
+  max-width: 45%;       
+  max-height: 85%;      
+  
+  object-fit: contain;  
+  
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6); 
+  
+  animation: driveZoom 0.2s ease-out; 
+}
+@keyframes driveZoom {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+  z-index: 10000; 
+}
+
+.close-btn:hover {
+  color: #bbb;
+  opacity: 1;
+}
